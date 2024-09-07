@@ -6,9 +6,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-  <body class="w-full flex flex-col flex-nowrap items-center">
+  <body class="flex flex-col flex-nowrap desktop:items-center bg-[#F7F7F7]">
     <header
-      class="w-[1440px] grid grid-cols-3 my-[16px] pl-[120px] pr-[120px] items-center font-['Roboto-Flex']"
+      class="desktop:w-[1440px] w-full flex flex-col tablet:grid grid-cols-3 py-[16px] laptop:px-[120px] tablet:px-[32px] items-center font-['Roboto-Flex']"
     >
       <div class="flex justify-start">
         <a href="/" class="flex flex-nowrap items-center">
@@ -24,7 +24,7 @@
         </a>
       </div>
       <p
-        class="flex justify-center text-[1rem] text-[#282828] font-[400] leading-6"
+        class="flex justify-center text-[1rem] text-[#282828] font-[400] leading-6 my-[16px]"
       >
         <a href="/galery" class="mr-[1.5rem]">Galeria zdjęć</a>
         <a href="/faq" class="">FaQ</a>
@@ -37,11 +37,115 @@
         </button>
       </div>
     </header>
+    <div class="desktop:w-[1440px] w-full absolute flex justify-center laptop:justify-end -z-10 laptop:px-[72px] px-[16px]">
+      <img
+        class="object-contain object-top max-w-full w-[668px] h-[659px]"
+        src="/src/img/road.svg"
+        alt="road"
+      />
+    </div>
+    <div
+      class="desktop:w-[1440px] w-full max-w-[100vw] pt-[120px] pb-[92px] tablet:pl-[88px] pl-[16px] flex flex-col flex-nowrap"
+    >
+      <div class="h-[625px] relative">
+        <div>
+          <h1
+            class="laptop:w-[648px] text-[#282828] text-[4.768rem] font-[400] leading-[5.245rem] font-['Bebas-Neue']"
+          >
+            Sprzedajemy samochody z europy
+          </h1>
+          <p
+            class="w-[280px] mt-[32px] text-[#282828] text-[1rem] font-[400] leading-[1.5rem] font-['Roboto-Condensed']"
+          >
+            Kup komfortowy pojazd, aby każda podróż była wyjątkowym przeżyciem.
+          </p>
+          <button
+            class="mt-[48px] mr-[24px] py-[0.75rem] px-[1.69rem] rounded-lg bg-[#0147FF] text-[#F7F7F7] text-[0.938rem] font-[600] leading-[1.406rem] font-['Roboto-Flex']"
+          >
+            Zobacz zdjęcia
+          </button>
+          <button
+            class="mt-[48px] py-[0.75rem] px-[1.69rem] rounded-lg border-[1px] border-[#0147FF] text-[#0147FF] bg-[#F7F7F7] text-[0.938rem] font-[600] leading-[1.406rem] font-['Roboto-Flex']"
+          >
+            Zadzwoń do nas
+          </button>
+        </div>
+        <img
+          class="ml-auto laptop:translate-y-[-124px] mt-[72px] mb-[32px] absolute right-0 z-[-5]"
+          src="/src/img/cars.png"
+          alt="cars"
+        />
+      </div>
+      <div class="mt-[80px]">
+        <p
+          class="text-[#0147FF] text-[1.344rem] font-[400] leading-[2.016rem] font-['Roboto-Condensed']"
+        >
+          Prezentacja firmy
+        </p>
+        <p
+          class="text-[#1D1D1B] text-[2.5rem] font-[400] leading-[3rem] font-['Bebas-Neue'] mb-[24px]"
+        >
+          ZOBACZ NASZĄ GALERIĘ ZDJĘĆ
+        </p>
+        <p
+          class="flex text-[#000000] text-[0.938rem] font-[400] leading-[1.406rem] font-['Roboto-Flex']"
+        >
+          <span
+            id="osobowe"
+            class="flex flex-nowrap text-[#0147FF] font-[600] border-b-[1px] border-[#0147FF] mr-[48px] cursor-pointer"
+            >Samochody osobowe</span
+          ><span id="dostawcze" class="cursor-pointer"
+            >Samochody dostawcze</span
+          >
+        </p>
+      </div>
+      <div
+        class="flex overflow-x-auto mt-[80px] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+      >
+        <img
+          class="w-[600px] h-[446px] mr-[64px]"
+          src="/src/img/car-1.png"
+          alt="car"
+        />
+
+        <img
+          class="w-[600px] h-[446px] mr-[64px]"
+          src="/src/img/car-2.png"
+          alt="car"
+        />
+        <img
+          class="w-[600px] h-[446px] mr-[64px]"
+          src="/src/img/car-3.png"
+          alt="car"
+        />
+        <img
+          class="w-[600px] h-[446px] mr-[64px]"
+          src="/src/img/car-1.png"
+          alt="car"
+        />
+        <img
+          class="w-[600px] h-[446px] mr-[64px]"
+          src="/src/img/car-2.png"
+          alt="car"
+        />
+      </div>
+      <div class="flex justify-center">
+        <ul
+          class="w-[80px] flex flex-nowrap justify-around mt-[48px] mb-[80px]"
+        >
+          <li class="p-[4px] bg-[#0147FF] rounded cursor-pointer"></li>
+          <li class="p-[4px] bg-[#EDEDED] rounded cursor-pointer"></li>
+          <li class="p-[4px] bg-[#EDEDED] rounded cursor-pointer"></li>
+          <li class="p-[4px] bg-[#EDEDED] rounded cursor-pointer"></li>
+          <li class="p-[4px] bg-[#EDEDED] rounded cursor-pointer"></li>
+        </ul>
+      </div>
+    </div>
     <footer
       class="w-full flex flex-col flex-nowrap items-center bg-[#282828] text-[#FFFFFF] font-['Roboto-Condensed']"
     >
       <div
-        class="w-[1440px] flex flex-nowrap justify-center pl-[120px] pr-[120px] pt-[88px]"
+        class="desktop:w-[1440px] flex desktop:flex-nowrap justify-center tablet:px-[120px] px-[16px] pt-[88px]"
       >
         <div class="pr-[24px]">
           <p
@@ -58,7 +162,7 @@
             venenatis eros ipsum ac arcu. Vestibulum et [...]
           </p>
           <button
-            class="flex flex-nowrap items-center text-[0.875rem] font-[400] leading-[1.313rem] border-t-white border-b-2 text-[#FFFFFF]]"
+            class="flex flex-nowrap items-center text-[0.875rem] font-[400] leading-[1.313rem] border-white border-b-2 text-[#FFFFFF]]"
           >
             <span>Rozwiń</span
             ><img
@@ -95,7 +199,7 @@
         </div>
       </div>
       <div
-        class="w-[1440px] flex flex-row flex-nowrap justify-between pl-[120px] pr-[120px] py-[24px] border-t-white border-t-2"
+        class="default:w-[1440px] w-full flex flex-row flex-nowrap justify-between pl-[120px] pr-[120px] py-[24px] border-t-white border-t-2"
       >
         <p>Cars Spot</p>
         <p>Polityka prywatności</p>
