@@ -1102,7 +1102,7 @@ video {
 @font-face {
   font-family: "Roboto-Flex";
 
-  src: url("/font/Roboto_Flex/static/RobotoFlex-Regular.ttf")
+  src: url("font/Roboto_Flex/static/RobotoFlex-Regular.ttf")
   format("truetype");
 
   font-weight: normal;
@@ -1113,7 +1113,7 @@ video {
 @font-face {
   font-family: "Bebas-Neue";
 
-  src: url("/font/Bebas_Neue/BebasNeue-Regular.ttf") format("truetype");
+  src: url("font/Bebas_Neue/BebasNeue-Regular.ttf") format("truetype");
 
   font-weight: normal;
 
@@ -1123,7 +1123,7 @@ video {
 @font-face {
   font-family: "Roboto-Condensed";
 
-  src: url("/font/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf")
+  src: url("font/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf")
   format("truetype");
 
   font-weight: normal;
